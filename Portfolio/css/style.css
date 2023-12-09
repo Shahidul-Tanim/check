@@ -1,0 +1,306 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+.container{
+    width: 1170px;
+    margin: auto;
+}
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+.align{
+    align-items: center;
+}
+a{
+    text-decoration: none;
+}
+ul{
+    list-style: none;
+}
+.heading{
+    font-size: 46px;
+    font-weight: 800;
+    text-transform: uppercase;
+    color: #02918c;
+    text-align: center;
+}
+.heading span{
+    font-size: 16px;
+    font-weight: 400;
+    color: #7e8287;
+    display: block;
+    padding: 32px 0;
+}
+.card{
+    border-right: 1px solid #7e8287b2; 
+    width: 25%;
+    text-align: center;
+    padding: 30px 0;
+}
+.card .icon{
+    color: #02918c;
+    font-size: 20px;
+}
+.card h4{
+    font-size: 16px;
+    font-weight: 800;
+    color: #7e8287;
+    margin: 29px 0;
+}
+.card p{
+    font-size: 11px;
+    font-weight:400;
+    color: #7e8287;
+    line-height: 21px;
+    padding: 0 50px;
+}
+.button{
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 18px 42px;
+    display: inline-block;
+    color: black;
+    background-color: #cfc91d;
+    transition: 0.5s;
+}
+/* common elements ends here */
+
+/* nav starts */
+nav{
+    background-color: #02918b;
+}
+nav .logo{
+    width: 40%;
+}
+nav .menu{
+    width: 60%;
+}
+nav .menu ul{
+    text-align: right;
+}
+nav ul li{
+    display: inline;
+}
+nav .menu ul li a{
+    display: inline-block;
+    padding: 25px;
+    font-weight: 800;
+    color: #ffffff;
+    font-size: 12px;
+    text-transform: uppercase;
+    text-align: right;
+}
+
+/* nav ends */
+
+/* banner starts */
+#banner{
+    background-image: url(../img/banner.jpg);
+    height: 728px;
+    background-size: cover;
+    color: white;
+    background-color: rgba(0, 0, 0, 0.34);
+    background-blend-mode: multiply;
+    text-align: center;
+}
+#banner .content{
+    width: 100%;
+}
+#banner .row{
+    height: 728px;
+}
+#banner .content h2{
+    font-size: 30px;
+    font-weight: 400;
+    color: #ffffff;
+}
+#banner .content h1{
+    font-size: 68px;
+    font-weight: 800;
+    color: #ffffff;
+    text-transform: uppercase;
+    letter-spacing: 30px;
+}
+#banner .content p{
+    font-size: 18px;
+    font-weight: 400;
+    color: #ffffff;
+}
+#banner .content img{
+    padding: 50px 0;
+}
+#banner .content a{
+    font-size: 14px;
+    font-weight: 800;
+    text-transform: uppercase;
+    padding: 18px 42px;
+    display: inline-block;
+    color: black;
+    background-color: #cfc91d;
+    transition: 0.5s;
+}
+#banner .content a:hover{
+    color: blue;
+    background-color: white;
+    border-radius: 10px;
+}
+/* banner ends */
+
+/* About Starts */
+#about{
+    padding: 97px 0;
+}
+.text p{
+    font-size: 16px;
+    color: #7e8287;
+    font-weight: 400px;
+    text-align: center;
+    padding: 0 150px;
+    line-height: 35px;
+    margin-bottom: 84px;
+}
+#about .card:last-child{
+    border: none;
+}
+/* About Ends */
+
+/* service starts */
+#service{
+    background-image: url(../img/service.png);
+    padding: 74px 0 ;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+#service .content{
+    width: 50%;
+}
+#service .content .heading{
+    text-align: left;
+}
+#service .content p{
+    font-size: 16px;
+    font-weight: 400;
+    color: #7e8287;
+    line-height: 41px;
+    padding-right: 100px;
+}
+#service .content .card{
+    width: 50%;
+    border: none;
+    text-align: left;
+}
+#service .content .card h4{
+    margin: 20px 0;
+}
+#service .content .card p{
+    padding-right: 20px;
+    padding-left: 0;
+    line-height: 25px;
+}
+/* service ends */
+
+/* My Works starts */
+#work{
+    margin: 100px 0;
+}
+#work .text{
+    font-size: 16px;
+    color: #7e8287;
+    font-weight: 400px;
+    text-align: center;
+    padding: 0 410px;
+    line-height: 35px;
+    margin-bottom: 84px;
+}
+#work .workCard{
+    width: 25%;
+    position: relative;
+}
+#work .workCard img{
+    display: block;
+    width: 100%;
+}
+#work .workCard .overlay{
+    background-color: rgba(48, 150, 145, 0.85);
+    position: absolute;
+    inset: 20px;
+    transform: scale(0);
+    transition: 1s;
+}
+#work .workCard:hover .overlay{
+    transform: scale(1);
+}
+#work .workCard .cardText{
+    padding: 53px 0;
+    text-align: center;
+}
+#work .workCard .cardText h4{
+    color: white;
+    font-size: 16px;
+    font-weight: 800;
+    margin-bottom: 14px;
+}
+#work .workCard .cardText p{
+    color: white;
+    font-size: 13px;
+    font-weight: 400;
+    padding: 0 60px;
+}
+
+/* My Works ends */
+
+/* contact strats */
+
+.pg{
+    font-size: 16px;
+    color: #7e8287;
+    font-weight: 400px;
+    text-align: center;
+    padding: 0 250px;
+    line-height: 35px;
+    margin-bottom: 84px;
+}
+#contact{
+    background-color: #0a0a0b;
+    padding: 65px 0;
+    text-align: center;
+}
+.formInput{
+    width: 600px;
+    margin: auto;
+}
+.formInput textarea,
+.formInput input{
+    width: 100%;
+    height: 35px;
+    text-align: center;
+    text-transform: uppercase;
+    background-color: transparent;
+    color: white;
+    border: none;
+    margin-bottom: 80px;
+}
+.formInput textarea{
+    height: 100px;
+}
+
+/* contact endss */
+
+/* footer starts */
+
+footer{
+    background-color: #000000;
+    text-align: center;
+    color: #595b5f;
+    padding: 30px 0 25px 0;
+}
+
+/* footer ends */
